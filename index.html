@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/d8c55e0bc2.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-manrope">
     <header class="container mx-auto">
         <!-- Nav is hear -->
         <div class="navbar bg-base-100">
@@ -140,7 +148,7 @@
                     <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br>
                         featuring weathered wood, sleek metal accents.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-6 lg:mx-0 gap-4 mt-12">
                     <div class="bg-[#E7C1D3] px-3 py-6 rounded-lg">
                         <img src="./assets/concept.png" alt="">
                         <h1 class="text-xl font-semibold">Concept</h1>
@@ -173,42 +181,41 @@
                 <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring
                     weathered wood, sleek metal accents.</p>
             </div>
-            <div>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 mt-4 mx-auto lg:ml-10">
-                    <div class="col-span-2 py-4 px-2 border border-spacing-1 rounded-lg flex-1 lg:flex gap-6 mx-auto">
-                        <div>
-                            <img class="border-dotted border-2 rounded-lg w-full" src="./assets/img1.png" alt="">
-                        </div>
-                        <div class="mx-auto">
-                            <h1 class="font-bold mb-4">Commercial</h1>
-                            <p class="mb-1">The barn house captivates with its blend of rustic charm and modern. The
-                                barn house captivates with its blend of rustic charm and modern .</p>
-                            <a href="#">View Details <i
-                                    class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F] rounded-3xl"></i></a>
-                        </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 mx-6 lg:mx-0">
+                <div class="rounded-xl lg:col-span-2 border border-spacing-1 flex-1 lg:flex gap-6">
+                    <div class="p-4 lg:mt-6">
+                        <img class="border-dotted border-2 rounded-lg mx-auto" src="./assets/img1.png" alt="">
                     </div>
-                    <div class="h-28 col-span-1 w-full ml-14 lg:mx-0">
-                        <img class="w-2/3 border-dotted border-2 rounded-lg" src="./assets/img2.png" alt="">
+                    <div class="py-4 mx-6 lg:mx-0 mb-4 lg:mt-4">
+                        <h1 class="font-bold text-xl mb-4">Commercial</h1>
+                        <p>The barn house captivates with its blend of rustic charm and modern. The barn house
+                            captivates with its blend of rustic charm and modern .</p>
+                        <a class="font-bold text-xl" href="#">View Details <i
+                                class="fa-solid fa-arrow-right p-1 bg-[#ABEF5F] -rotate-45 rounded-3xl"></i></a>
                     </div>
                 </div>
-                <div class="grid order-first md:order-first grid-cols-2 lg:grid-cols-4 gap-1 mt-4">
-                    <div class="col-span-1 border border-spacing-1 rounded-lg mt-4 lg:mt-0 py-2 w-full ml-14 lg:ml-0">
-                        <img class="border-dotted border-2 rounded-lg w-11/12 mx-auto" src="./assets/img3.png" alt="">
+                <div class="rounded-xl col-span-1 border border-spacing-1 py-2">
+                    <img class="w-full lg:w-11/12 mx-auto lg:h-11/12 my-auto border-dotted border-2 rounded-xl"
+                        src="./assets/img2.png" alt="">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4 mt-10 gap-4">
+                <div class="col-span-1 p-2 border border-spacing-1 rounded-xl">
+                    <img class="border-dotted border-2 rounded-xl mx-auto w-full" src="./assets/img3.png" alt="">
+                </div>
+                <div class="col-span-2 flex-1 lg:flex p-4 border border-spacing-1 gap-4 rounded-xl">
+                    <div class="lg:mt-4">
+                        <img class="border-dotted border-2 rounded-xl w-full" src="./assets/img4.png" alt="">
                     </div>
-                    <div class="col-span-2 w-full  order-2 lg:order-2 flex-1 lg:flex gap-4 py-2 border border-spacing-1 mx-auto rounded-lg">
-                        <div class="">
-                            <img class="lg:w-11/12 mx-auto my-auto" src="./assets/img4.png" alt="">
-                        </div>
-                        <div class="ml-6 lg:ml-0">
-                            <h1 class="font-bold mb-4">Commercial</h1>
-                            <p class="mb-1">The barn house captivates with its blend of rustic charm and modern.</p>
-                            <a href="#">View Details <i
-                                    class="fa-solid fa-arrow-right -rotate-45 p-2 bg-[#ABEF5F] rounded-3xl"></i></a>
-                        </div>
+                    <div class="lg:mt-4 mx-6 lg:mx-0 mt-3">
+                        <h1 class="font-bold text-xl mb-4">Commercial</h1>
+                        <p class="mb-2">The barn house captivates with its blend of rustic charm and modern. </p>
+                        <a class="font-bold text-xl" href="#">View Details <i
+                                class="fa-solid fa-arrow-right p-1 bg-[#ABEF5F] -rotate-45 rounded-3xl"></i></a>
                     </div>
-                    <div class="col-span-1 mx-auto order-3 md:order-first lg:order-3 border border-spacing-1 py-2 rounded-lg w-full ml-14">
-                        <img class="mx-auto border-dotted border-2" src="./assets/img5.png" alt="">
-                    </div>
+                </div>
+                <div class="col-span-1 p-2 border border-spacing-1 rounded-xl">
+                    <img class="border-dotted border-2 rounded-xl mx-auto lg:w-full" src="./assets/img5.png" alt="">
                 </div>
             </div>
         </section>
